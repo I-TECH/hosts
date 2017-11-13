@@ -1,0 +1,9 @@
+{
+    "name": "I-TECH Android audio streaming hosts file",
+    "description": "Used to save bandwidth for Android deployments.",
+    "homeurl": "https://github.com/I-TECH/Android-hosts-files",
+    "frequency": "occasional",
+    "issues": "https://github.com/I-TECH/Android-hosts-files/issues",
+    "url": "https://raw.githubusercontent.com/I-TECH/Android-hosts-files/master/audio-streaming-hosts",
+    "license": "MIT"
+}
