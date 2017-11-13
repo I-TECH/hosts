@@ -1,5 +1,22 @@
 [![Build Status](https://travis-ci.org/StevenBlack/hosts.svg?branch=master)](https://travis-ci.org/StevenBlack/hosts)
 
+# I-TECH Changes
+
+- Removed hosts that do not have a license or are meant for non-commercial purposes only.  
+- Added audio-streaming and video-streaming extensions
+
+Run the following command to build the hosts file:
+
+    python3 updateHostsFile.py -a -e gambling porn fakenews audio-streaming video-streaming social
+
+Once built, you have to copy the file to I-TECH_hosts:
+
+    cp hosts I-TECH_hosts
+
+Push the change to GitHub
+
+    git push
+
 # Unified hosts file with base extensions
 
 This repository consolidates several reputable `hosts` files, and merges them
