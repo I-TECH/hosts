@@ -1,12 +1,17 @@
 # This hosts file is a merged collection of hosts from reputable sources,
-# with a dash of crowd sourcing via Github
+# with a dash of crowd sourcing via Github.
+# This file has been modified by I-TECH for deployment.
+# The original creator is StevenBlack.
 #
-# Date: November 13 2017
+# Date: November 14 2017
 # Extensions added to this file: audio-streaming, fakenews, gambling, porn, social, video-streaming
 # Number of unique domains: 29,110
 #
-# Fetch the latest version of this file: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-# Project home page: https://github.com/StevenBlack/hosts
+# The I-TECH version of this hosts file can be fetched from: https://raw.githubusercontent.com/I-TECH/hosts/master/I-TECH_hosts
+# I-TECH Fork home page: https://github.com/I-TECH/hosts
+#
+# The original hosts file can be fetched from: https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+# StevenBlack Project home page: https://github.com/StevenBlack/hosts
 #
 # ===============================================================
 
@@ -20,10 +25,6 @@ fe80::1%lo0 localhost
 127.0.1.1 ubuntu-xenial
 127.0.0.53 ubuntu-xenial
 
-# Custom host records are listed here.
-
-
-# End of custom host records.
 # AdAway default blocklist
 
 # Blocking mobile ad providers and some analytics providers
@@ -33282,19 +33283,3 @@ fe80::1%lo0 localhost
 # Sling
 
 0.0.0.0 www.sling.com
-# blacklist
-
-#
-
-# The contents of this file (containing a listing of additional domains in
-
-# 'hosts' file format) are appended to the unified hosts file during the
-
-# update process. For example, uncomment the following line to block
-
-# 'example.com':
-
-
-
-# 0.0.0.0 example.com
-

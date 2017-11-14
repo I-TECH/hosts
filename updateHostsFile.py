@@ -193,6 +193,9 @@ def main():
                   "{:,}".format(number_of_rules) +
                   " unique entries.")
 
+    # Create I-TECH_hosts
+    shutil.copy("hosts", "I-TECH_hosts")
+
     move_file = prompt_for_move(final_file, auto=auto,
                                 replace=settings["replace"],
                                 skipstatichosts=skip_static_hosts)
