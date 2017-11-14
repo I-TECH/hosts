@@ -770,7 +770,9 @@ def write_opening_header(final_file, **header_params):
     final_file.seek(0)  # Write at the top.
     write_data(final_file, "# This hosts file is a merged collection "
                            "of hosts from reputable sources,\n")
-    write_data(final_file, "# with a dash of crowd sourcing via Github\n#\n")
+    write_data(final_file, "# with a dash of crowd sourcing via Github.\n")
+    write_data(final_file, "# This file has been modified by I-TECH for deployment.\n")
+    write_data(final_file, "# The original creator is StevenBlack.\n#\n")
     write_data(final_file, "# Date: " + time.strftime(
         "%B %d %Y", time.gmtime()) + "\n")
 
@@ -781,12 +783,16 @@ def write_opening_header(final_file, **header_params):
     write_data(final_file, ("# Number of unique domains: " +
                             "{:,}\n#\n".format(header_params[
                                                    "numberofrules"])))
-    write_data(final_file, "# Fetch the latest version of this file: "
+    write_data(final_file, "# The I-TECH version of this hosts file can be fetched from: "
+                           "https://raw.githubusercontent.com/I-TECH/hosts/master/I-TECH_hosts\n")
+    write_data(final_file, "# I-TECH Fork home page: https://github.com/"
+                           "I-TECH/hosts\n#\n")
+    write_data(final_file, "# The original hosts file can be fetched from: "
                            "https://raw.githubusercontent.com/"
                            "StevenBlack/hosts/master/" +
                path_join_robust(header_params["outputsubfolder"],
                                 "") + "hosts\n")
-    write_data(final_file, "# Project home page: https://github.com/"
+    write_data(final_file, "# StevenBlack Project home page: https://github.com/"
                            "StevenBlack/hosts\n#\n")
     write_data(final_file, "# ==============================="
                            "================================\n")
